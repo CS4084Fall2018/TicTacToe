@@ -1,7 +1,8 @@
 package ie.ul.davidfisher.tictactoe;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,4 +15,26 @@ public class MainActivity extends AppCompatActivity {
 
     mGame = new TicTacToeGame(this);
   }
+
+  public void pressedSquare(View view) {
+    String tagAsStr = view.getTag().toString();
+    int tagAsInt = Integer.parseInt(tagAsStr);
+    //Log.d("TTT", "You pressed index " + tagAsInt);
+
+  }
+
+  public void pressedNewGame(View view) {
+    
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
